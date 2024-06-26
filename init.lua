@@ -15,10 +15,5 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
--- my custom buttons --
-
-vim.api.nvim_set_keymap('n', '<C-S>', ':LiveServerStart<CR>', { noremap = true, silent = true })
-
-
 require "lazy_setup"
 require "polish"
