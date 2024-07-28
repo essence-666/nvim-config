@@ -15,5 +15,11 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- Ensure .tsx files are recognized correctly
+vim.cmd [[
+  autocmd BufRead,BufNewFile *.tsx set filetype=typescriptreact
+]]
+
+
 require "lazy_setup"
 require "polish"
